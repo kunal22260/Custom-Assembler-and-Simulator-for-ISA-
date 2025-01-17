@@ -8,7 +8,7 @@ We set the variable `l` to the length of the remaining lines after the "var" dec
 We process each line of the input file. If a line contains a label (identified by the presence of a colon), we extract the label and add it to the `labels` dictionary with its corresponding line number (subtracting `c`). We then append the instruction part of the line to the `instructions` list.
 If a line does not contain a label, we directly append the instruction part of the line to the `instructions` list.
 After processing all the lines, we check if the last instruction is "hlt." If not, we raise a syntax error.
-For each instruction in the `instructions` list, we call the `process_instruction` function. It takes an instruction, line number, `variables`, `labels`, `instructions`, and `l` as parameters and returns the binary representation of the instruction.
+For each of the  instruction in the `instructions` list, we call the `process_instruction` function. It takes an instruction, line number, `variables`, `labels`, `instructions`, and `l` as parameters and returns the binary representation of the instruction.
 Inside `process_instruction`, we build the binary string representation of the instruction based on the opcode and operands.
 If the opcode is "var," we add the variable to the `variables` dictionary with its corresponding line number (calculated using `l`, `line_number`, and `c`).
 If the opcode is "mov," it is handled separately from the other types of instructions.
