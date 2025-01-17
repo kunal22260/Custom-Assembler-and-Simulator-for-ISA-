@@ -1,5 +1,5 @@
 # co_project_group_no.A12
-The code defines dictionaries `dictionary_registers` and `dictionary_functions`, which map register names and opcodes to their binary representations, respectively. It also defines the different types of instructions based on their opcode patterns.
+This code defines dictionaries `dictionary_registers` and `dictionary_functions`, which map register names and opcodes to their binary representations, respectively. It also defines the different types of instructions based on their opcode patterns.
 The function `decimal_to_binary` takes a decimal number, converts it to a binary string representation, and returns the binary string as a 7-bit value.
 The function `assemble` is the main entry point of the code. It takes an input file path and an output file path as parameters.
 Inside `assemble`, we initialize variables, labels, and instructions lists, and set a counter `c` to 0.
